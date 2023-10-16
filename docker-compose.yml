@@ -1,0 +1,13 @@
+version: '3'
+services:
+web:
+build:
+context: ./web
+ports:
+- "8000:8000"
+database:
+image: postgres
+environment:
+POSTGRES_USER: docker
+POSTGRES_PASSWORD: kelompok9
+POSTGREA_DB: mahasiswa
